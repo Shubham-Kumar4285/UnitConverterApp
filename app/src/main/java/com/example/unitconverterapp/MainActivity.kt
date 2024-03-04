@@ -1,5 +1,6 @@
 package com.example.unitconverterapp
 
+import android.graphics.Paint.Style
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -220,7 +221,9 @@ fun UnitConverter(){
 
             }
             Spacer(modifier = Modifier.height(10.dp))
-            Text(text = "Result : $outputValue $outputUnit")
+            Text(text = "Result : $outputValue $outputUnit",
+                style =MaterialTheme.typography.bodyLarge, fontFamily = FontFamily.Monospace
+            )
 
         }
 }
